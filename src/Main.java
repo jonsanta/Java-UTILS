@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		//Fib for
+		//Fib For
 		for(int item : fib2(2))
 		{
 			if(item != 0) System.out.print(", ");
@@ -15,7 +15,7 @@ public class Main {
 		
 		System.out.println();
 		
-		//Fib recursivo
+		//Fib recursive
 		for(int item : fib(10, new int[] {0, 1}))
 		{
 			if(item != 0) System.out.print(", ");
@@ -23,7 +23,7 @@ public class Main {
 		}
 	}
 	
-	//Fib calculado con bucle FOR
+	//Fib calculated with For loop
 	private static List<Integer> fib2(int num) {
 		List<Integer> serie = new ArrayList();
 		serie.add(0);
@@ -38,7 +38,7 @@ public class Main {
 		return serie;
 	}
 	
-	//Fib calculado con recursividad
+	//Fib calculated with recursive function
 	private static int[] fib(int num, int[] serie) {
 		if(serie.length -1 == num) return serie;
 		else {
@@ -48,7 +48,7 @@ public class Main {
 		}
 	}
 	
-	//suma los dos ultimos numeros de la serie - usado en fib recursivo
+	//sum last 2 numbers from the given arr
 	private static int sum(int[] serie)
 	{
 		return serie[serie.length-2] + serie[serie.length-1];
