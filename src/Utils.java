@@ -1,12 +1,11 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class Utils {
 	//Fib calculated with For loop
 	public static List<Integer> fib(int num) {
-		List<Integer> serie = new ArrayList();
+		List<Integer> serie = new ArrayList<Integer>();
 		serie.add(0);
 		serie.add(1);
 		
@@ -42,5 +41,10 @@ public class Utils {
 			output += input.charAt(x);
 		}
 		return output;
+	}
+	
+	public static int countWords(String input) {
+		String fixed = input.trim().replaceAll(" +", " "); //removes multiplied spaces
+		return fixed.split(Character.toString(32)).length; //returns number of elements in splitted string
 	}
 }
