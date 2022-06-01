@@ -35,16 +35,16 @@ public class Utils {
 	}
 	
 	public static String reverseString(String input) {
-		String output = "";
+		String output = ""; //temporal String
 		
-		for(int x = input.length()-1; x >= 0; x--) {
-			output += input.charAt(x);
+		for(int x = input.length()-1; x >= 0; x--) { //Reverse for loop
+			output += input.charAt(x); //adds new chars into temporal String
 		}
 		return output;
 	}
 	
 	public static int countWords(String input) {
-		String fixed = input.trim().replaceAll(" +", " "); //removes multiplied spaces
+		String fixed = input.trim().replaceAll(" +", " "); //removes duplicated spaces
 		return fixed.split(Character.toString(32)).length; //returns number of elements in splitted string
 	}
 }
