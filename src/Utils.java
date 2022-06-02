@@ -47,4 +47,17 @@ public class Utils {
 		String fixed = input.trim().replaceAll(" +", " "); //removes duplicated spaces
 		return fixed.split(Character.toString(32)).length; //returns number of elements in splitted string
 	}
+	
+	public static int hammingDistance(String str1, String str2) {
+
+		int distance = 0;
+		
+		if(str1.length() != str2.length()) return -1;
+		else {
+			for(int x = 0; x < str1.length(); x++) {
+				if(str1.charAt(x) != str2.charAt(x)) distance++;
+			}
+		}
+		return distance;
+	}
 }
