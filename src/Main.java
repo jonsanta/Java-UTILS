@@ -21,6 +21,7 @@ public class Main {
 		System.out.println("\n"+Utils.reverseString("Hola"));
 		String word = "¿Hola  que       tal          estas?            ";
 		System.out.println("numero de palabras en: '"+word+"' - "+Utils.countWords(word));
+		System.out.println("numero de i encontradas en la palabra: InstanciaiiI = "+Utils.countCharacter('i', "InstanciaiiI"));
 		System.out.println("Hamming distance: "+Utils.hammingDistance("patitosw", "paratosa"));
 	}
 }

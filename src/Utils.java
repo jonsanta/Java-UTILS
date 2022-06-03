@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Utils {
 	//Fib calculated with For loop
@@ -46,6 +47,15 @@ public class Utils {
 	public static int countWords(String input) {
 		String fixed = input.trim().replaceAll(" +", " "); //removes duplicated spaces
 		return fixed.split(Character.toString(32)).length; //returns number of elements in splitted string
+	}
+	
+	//Count number of character x? on the given string
+	public static int countCharacter(char character, String input) {
+		int count = 0;
+		for(char c : input.toLowerCase().toCharArray()) {
+			if(c == character) count++;
+		}
+		return count;
 	}
 	
 	public static int hammingDistance(String str1, String str2) {
