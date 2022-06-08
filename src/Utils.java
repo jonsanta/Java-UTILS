@@ -58,6 +58,7 @@ public class Utils {
 		return count;
 	}
 	
+	//Returns number of distinct chars in 2 given strings
 	public static int hammingDistance(String str1, String str2) {
 
 		int distance = 0;
