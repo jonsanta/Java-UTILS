@@ -70,4 +70,13 @@ public class Utils {
 		}
 		return distance;
 	}
+	
+	public static int countVowels(String str) {
+		int count = 0;
+		for(int x = 0; x < str.length(); x++) {
+			char aux = str.toLowerCase().charAt(x);
+			if(aux == 'a' || aux == 'e' || aux == 'i' || aux == 'o' || aux == 'u') count++;
+		}
+		return count;
+	}
 }
