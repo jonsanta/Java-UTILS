@@ -79,4 +79,15 @@ public class Utils {
 		}
 		return count;
 	}
+	
+	public static void isPrime(int num) {
+		int count = 0;
+		
+		for(int x = num; x > 0; x--)
+			if(num % x == 0) count++;
+		
+		if(count == 2) System.out.println("El numero "+num+" es primo");
+		else System.out.println("El numero "+num+" no es primo");
+	}
+	
 }
